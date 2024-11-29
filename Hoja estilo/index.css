@@ -1,0 +1,533 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+  
+h1 {
+    font-size: 3em;
+    color: #ffffff; 
+    text-align: center;
+    margin-top: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+}
+  
+  /* Barra de Navegación */
+.contenedor-nav {
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+  
+.contenedor-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 0 10px;
+    background: #00c6ff;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+  
+.contenedor-nav a:hover {
+    background: #ff4c4c; /* Rojo brillante en hover */
+    box-shadow: 0 0 10px rgba(255, 76, 76, 0.6); /* Sombra en hover */
+    transform: scale(1.05); /* Efecto de escala */
+}
+  
+  /* Contenedor de Introducción */
+  .contenedor-intro {
+    width: 85%;
+    max-width: 960px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+}
+  
+.contenedor-intro p {
+    font-size: 1.2em;
+    color: #cccccc;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+  
+.contenedor-intro p{
+    text-align: center;
+    color: #ffffff;
+}
+.contenedor-img{
+    text-align: center;
+}
+.contenedor-img img {
+    width: 50%; /* La imagen ocupa el 100% del contenedor */
+    height: auto; /* Mantiene las proporciones */
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+  
+.contenedor-intro h2 {
+    color: #ffffff; 
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.subContenedor-Intro span {
+    float: left; 
+    width: 100%; 
+    margin-bottom: 10px; 
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.contenedor-boton{
+    text-align: center;
+}
+a.boton-inscripcion  {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #00c6ff; 
+    color: #ffffff; 
+    font-size: 18px;
+    text-decoration: none; 
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+a.boton-inscripcion:hover {
+    background: #ff4c4c; /* Rojo brillante en hover */
+    box-shadow: 0 0 10px rgba(255, 76, 76, 0.6);
+    transform: scale(1.1); 
+}
+
+.contenedorIntro-formulario{
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 800px;
+}
+.contenedorIntro-formulario h2{
+    font-size: 2.5em;
+}
+.contenedorIntro-formulario p{
+    font-size: 1.2em;
+}
+
+.contenedor-inscripcion{
+    width: 80%;
+    max-width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.contenedor-inscripcion input[type="text"],
+.contenedor-inscripcion input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+}
+.contenedor-inscripcion input[type="submit"] {
+    background-color: #ff4c4c;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.contenedor-inscripcion input[type="submit"]:hover {
+    background-color: #e53935;
+}
+.contenedor-inscripcion input::placeholder {
+    color: #bbb;
+}
+
+
+.contenedor-juegos {
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.contenedor-juegos h2 {
+    font-size: 3.5em;
+    margin-bottom: 15px;
+}
+
+.contenedor-juegos p {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.contenedor-categoria {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contenedor-categoria a {
+    color: #ffffff;
+    font-size: 1.3em;
+    margin: 0 15px;
+    padding: 10px 20px;
+    background-color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contenedor-categoria a:hover {
+    background-color: #ff4c4c;
+}
+
+.contenedor-categoria a:active {
+    background-color: #e03a3a;
+}
+
+
+
+
+
+
+
+.contenedorJuegos{
+    width: 85%;
+    max-width: 960px;
+    margin: 50px auto;
+    text-align: center;
+    margin-top: 200px;
+}
+.contenedorJuegos h2 {
+    color: #ffffff; 
+    font-size: 3em;
+    margin-bottom: 20px;
+    transition: color  0.3s ease ;
+
+}
+.contenedorJuegos h2:hover {
+    color: #e03a3a;
+}
+
+.contenedorJuegos p {
+    color: #ffffff;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+.contenedor-1, 
+.contenedor-2, 
+.contenedor-3 {
+    width: 30%;
+    margin: 0 1.5%;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    
+}
+.contenedor-1:hover, 
+.contenedor-2:hover, 
+.contenedor-3:hover {
+    background-color: #e03a3a;
+    transform: scale(1.05);
+    
+}
+.contenedor-1 img,
+.contenedor-2 img,
+.contenedor-3 img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.contenedor-1 p,
+.contenedor-2 p,
+.contenedor-3 p {
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: normal;
+    font-weight: bold;
+}
+
+.contenedor-calendario {
+    margin: 100px auto;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+.contenedor-calendario h2 {
+    font-size: 3em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.contenedor-calendario p {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.contenedor-eventos {
+    width: 90%;
+    margin: 0 auto; 
+    clear: both; 
+}
+.evento {
+    float: left;
+    width: 30%;
+    margin-right: 3%;
+    margin-bottom: 20px;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+.evento h3 {
+    font-size: 1.7em;
+    color: #ff4c4c;
+    margin-bottom: 10px;
+}
+.evento p {
+    font-size: 1.1em;
+}
+.evento:hover {
+    background-color: #444;
+}
+.evento img{
+    width: 100%;
+    margin-top: 10px;
+    height: auto;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+
+
+
+.contenedor-introPremio{
+    text-align: center;
+    margin-top: 100px;
+
+}
+.contenedor-introPremio h2{
+    font-size: 2.5em;    
+
+}
+
+
+.contenedor-premios{
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+
+}
+.contenedor-premios h2{
+    font-size: 2.5em;
+
+}
+.contenedor-premios p{
+    font-size: 1.5em;
+    margin-bottom: 10%;
+}
+.premio{
+    float: left;
+    width: 30%;
+    margin: 1.66%; 
+    background-color: #292929;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    margin-bottom: 20%;
+}
+.premio:hover{
+    transform: scale(1.1);
+}
+.premio img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.contenedor-comunidad {
+    color: #ffffff;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    max-width: 1000px;
+    overflow: hidden;  
+}
+.contenedor-comunidad h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contenedor-comunidad p {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.redes-sociales {
+    overflow: hidden; 
+    margin: 20px 0;
+    text-align: center;
+}
+.red {
+    float: left;
+    width: 30%; 
+    text-align: center;
+    margin: 0 1.66%; 
+}
+.red img {
+    width: 80px; 
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    
+}
+.red p {
+    font-size: 0.9em;
+    margin: 5px 0;
+    font-size: 1.1em;
+    transition: transform 0.3s ease;
+}
+.red p:hover {
+    transform: scale(1.2);
+}
+.red a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.red a:hover {
+    color: #e03a3a;
+}
+.contenido-destacado{
+    margin-top: 5%;
+}
+.contenido-destacado h3{
+    font-size: 2em;
+}
+.contenido-destacado li{
+    padding: 10px;
+}
+
+.contenido-destacado a{
+    font-size: 1.1em;
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+.contenido-destacado a:hover{
+    transform: scale(1.1);
+    color: #e03a3a;
+    
+}
+.participa {
+    clear: both; 
+    margin-top: 30px;
+    text-align: center;
+}
+
+.participa h3 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.participa p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.boton-participa {
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+}
+.contenedor-comentarios {
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+.contenedor-comentarios h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+.comentario {
+    background-color: #fff; 
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+.comentario-texto {
+    font-size: 1.1em;
+    color: #555;
+    font-style: italic;
+}
+.comentario-autor {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+.contenedor-pie{
+    margin-top: 200px;
+    background-color:#00c6ff;
+}
+.contenedor-pie h3{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 2em;
+}
+.redes-sociales img{
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    margin-inline: 20px;
+}
+.contacto{
+    text-align: center;
+    padding-bottom: 50px;
+}
